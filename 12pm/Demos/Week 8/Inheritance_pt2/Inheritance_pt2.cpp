@@ -7,10 +7,10 @@
 
 #include <iostream>
 #include <vector>
-using namespace std;
 
 #include "Character.h"
 #include "Cleric.h"
+using namespace std;
 
 void wrapper();
 
@@ -34,6 +34,10 @@ void wrapper()
 	Cleric childObj = Cleric("Pax", "Attention");
 	cout << endl;
 
+	// you could change this to cleric*
+	// but we arent changing code to make aiden print correctly
+	// fix is how classes are defined.... ohhh
+	// like virtual and override.... OHHH
 	Character* parentPtrToChildObj = new Cleric("Aiden","Food");
 	cout << endl;
 

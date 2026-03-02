@@ -5,7 +5,11 @@ using namespace std;
 
 Cleric::Cleric() : Cleric("Cleric", "Binky")
 {
-	#ifdef CHAR_DEBUG_ON 
+	// this should be printing out when created?
+	#ifdef CHAR_DEBUG_ON // pre processor directive. this line of code
+	// is only gonna get included in the code that is compiled, if that char_debug_on is defined somewhere.
+	// so since char debug aint defined, we dont see this directive anywhere
+	// doing if/bools takes performance, so this is more efficient 
 	cout << "+Cleric" << endl;
 	#endif
 }

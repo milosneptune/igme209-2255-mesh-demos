@@ -8,10 +8,10 @@ class Cleric :
 public:
 	Cleric();
 	Cleric(std::string _name, std::string _deity);
-	~Cleric();	
+	~Cleric();	// NEVER OVERRIDE, we want BOTH destructors to run
 
-	void PrintData();
-	void PrintType();
+	void PrintData() override;
+	void PrintType() override;
 
 protected:
 	std::string deity;
